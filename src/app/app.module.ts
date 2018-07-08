@@ -18,11 +18,15 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AutocompleteOptgroupExampleComponent } from './autocomplete-optgroup-example/autocomplete-optgroup-example.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { QuillModule } from 'ngx-quill';
+import { QuillDemoComponent } from './quill-demo/quill-demo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     SteveNavComponent,
-    AutocompleteOptgroupExampleComponent
+    AutocompleteOptgroupExampleComponent,
+    QuillDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatBadgeModule,
     MatAutocompleteModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    QuillModule
   ],
   providers: [],
   bootstrap: [AppComponent]
