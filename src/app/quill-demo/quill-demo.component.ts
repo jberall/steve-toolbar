@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-quill-demo',
@@ -8,7 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class QuillDemoComponent implements OnInit {
   form = new FormGroup({
-    note: new FormControl()
+    note: new FormControl('', Validators.required)
   });
   constructor() {}
 
