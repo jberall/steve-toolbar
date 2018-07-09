@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 // Rich Text Editor
-@import '~quill/dist/quill.core.css';
-@import '~quill/dist/quill.snow.css';
+// @import '~quill/dist/quill.core.css';
+// @import '~quill/dist/quill.snow.css';
 
 .flex-spacer {
   flex: 1 1 auto;
 }
 .full-width {
-  width: 100% !important;
+  // width: 100% !important;
+  width: 800px;
 }
 
 .search-bar {

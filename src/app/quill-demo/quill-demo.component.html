@@ -1,10 +1,11 @@
 <h6>This is an example of a Rich text editor called quill-editor</h6>
 
+<app-sub-quill [parentForm]="form" [ctl]="form.get('note')" [placeholder]="'Quill RTE'"></app-sub-quill>
 <form [formGroup]="form">
   <!-- <mat-form-field>
     <input matInput formControlName="note" placeholder="Hello Carol">
   </mat-form-field> -->
-  <quill-editor theme="snow" formControlName="note" [modules]="{toolbar: true}" placeholder="Note"></quill-editor>
+  <!-- <quill-editor theme="snow" formControlName="note" [style]="{height: '200px'}" [modules]="{toolbar: true}" placeholder="Note"></quill-editor> -->
   <mat-error *ngIf="!form.get('note').pristine && form.get('note').hasError('required')">
     <div>
       A note is required!

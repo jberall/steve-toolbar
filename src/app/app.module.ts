@@ -1,3 +1,4 @@
+import { SubQuillModule } from './sub-quill/sub-quill.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -42,7 +43,8 @@ import { QuillDemoComponent } from './quill-demo/quill-demo.component';
     MatAutocompleteModule,
     MatSelectModule,
     MatInputModule,
-    QuillModule
+    QuillModule,
+    SubQuillModule
   ],
   providers: [],
   bootstrap: [AppComponent]
