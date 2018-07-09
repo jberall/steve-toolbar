@@ -5,9 +5,9 @@
     <input matInput formControlName="note" placeholder="Hello Carol">
   </mat-form-field> -->
   <quill-editor theme="snow" formControlName="note" [modules]="{toolbar: true}" placeholder="Note"></quill-editor>
-  <mat-error *ngIf="!form.get('note').pristine">
+  <mat-error *ngIf="!form.get('note').pristine && form.get('note').hasError('required')">
     <div>
-      A note is required! {{form.get('note').hasError('required')}}
+      A note is required!
     </div>
   </mat-error>
 </form>
