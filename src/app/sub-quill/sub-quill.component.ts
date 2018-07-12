@@ -18,6 +18,8 @@ import { FormControl, FormGroup } from '@angular/forms';
       A note is required!
     </div>
   </mat-error>
+  <p>inner form</p>
+  {{ parentForm.value | json }}
   `,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush
